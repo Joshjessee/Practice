@@ -106,26 +106,41 @@ body{
 .weather-details{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
+    gap: 10px;
 }
 
-.weather-details .humidity, .weather-details .wind{
+.weather-details .humidity,
+.weather-details .wind,
+.weather-details .wind-direction,
+.weather-details .clouds{
     display: flex;
     align-items: center;
-    width: 50%;
-    height: 100px;
+    width: 48%;
+    height: 80px;
 }
 
 .weather-details .humidity{
     padding-left: 20px;
-    justify-content: flex-end;
-
+    justify-content: flex-start;
 }
- .weather-details .wind{
+
+.weather-details .wind{
     padding-right: 20px;
-    justify-content: flex-end;
- }
+    justify-content: flex-start;
+}
+
+.weather-details .wind-direction{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-details .clouds{
+    padding-right: 20px;
+    justify-content: flex-start;
+}
 
  .weather-details i{
     color: #06283D;
@@ -181,4 +196,107 @@ body{
         scale: 1;
         opacity: 1;
     }
+}
+
+/* Skydiving Info Styles */
+.skydiving-info {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0f8ff;
+    border-radius: 12px;
+    display: none;
+}
+
+.skydiving-info h3 {
+    color: #06283D;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.altitude-winds {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.altitude-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.altitude-label {
+    color: #06283D;
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 140px;
+}
+
+.altitude-data {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.altitude-data span {
+    color: #06283D;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wind-speed-alt {
+    min-width: 80px;
+}
+
+.wind-dir-alt {
+    min-width: 90px;
+}
+
+.skydiving-recommendation {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.recommendation-text {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.recommendation-text.excellent {
+    background: #d4edda;
+    color: #155724;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.recommendation-text.good {
+    background: #d1ecf1;
+    color: #0c5460;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.recommendation-text.caution {
+    background: #fff3cd;
+    color: #856404;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.recommendation-text.dangerous {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 16px;
+    border-radius: 8px;
 }
