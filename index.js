@@ -158,9 +158,9 @@ search.addEventListener("click", () => {
             recommendationText.innerHTML = recommendationData.recommendation;
             recommendationText.className = `recommendation-text ${recommendationData.safetyLevel}`;
 
-            weatherBox.style.display = '';
-            weatherDetails.style.display = '';
-            skydivingInfo.style.display = '';
+            weatherBox.style.display = 'block';
+            weatherDetails.style.display = 'flex';
+            skydivingInfo.style.display = 'block';
             weatherBox.classList.add("fadeIn");
             weatherDetails.classList.add("fadeIn");
             skydivingInfo.classList.add("fadeIn");

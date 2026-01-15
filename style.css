@@ -73,6 +73,7 @@ body{
 
 .weather-box{
     text-align: center;
+    display: none;
 }
 
 .weather-box img{
@@ -105,7 +106,7 @@ body{
 
 .weather-details{
     width: 100%;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
@@ -182,7 +183,7 @@ body{
  }  
 
  .weather-box .weather-details{
-    scale: 0
+    scale: 0;
     opacity: 0;
 }
 
