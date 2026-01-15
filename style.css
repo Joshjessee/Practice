@@ -263,8 +263,6 @@ body{
 
 .skydiving-recommendation {
     margin-top: 20px;
-    padding: 16px;
-    border-radius: 8px;
     text-align: center;
 }
 
@@ -272,6 +270,7 @@ body{
     font-size: 18px;
     font-weight: 600;
     margin: 0;
+    display: block;
 }
 
 .recommendation-text.excellent {
